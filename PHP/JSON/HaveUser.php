@@ -1,14 +1,14 @@
 <?php
 
 
-require_once '../PHP/BaseDeDonnes/DataBase.php';
+require_once '../BaseDeDonnees/DataBase.php';
 session_start();
 
 $obj = new stdClass();
 
 $db = new Database();
 
-$stmt = $db->pdo()->prepare("SELECT USERNAME FROM USR WHERE USERNAME != ?");
+$stmt = $db->pd()->prepare("SELECT USERNAME FROM USR WHERE USERNAME != ?");
 $stmt->execute([$_SESSION['user']]);
 
 foreach ($stmt as $row) {

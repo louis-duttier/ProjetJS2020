@@ -1,7 +1,7 @@
 <?php
 
 
-require_once 'DataPrincip.php';
+require_once 'DataPrincipal.php';
 class DataBase
 {
     private $pd;
@@ -14,7 +14,7 @@ class DataBase
         $charset = $data['charset'];
         $db = $data['name'];
         $user = $data['username'];
-        $passwd = $data['password'];
+        $pwd = $data['password'];
 
         $dsn = 'mysql:host='. $hst . ';dbname='. $db . ';charset='. $charset;
         $options = [
@@ -24,7 +24,7 @@ class DataBase
         ];
 
         try {
-            $this->pd = new PDO($dsn, $user, $passwd, $options);
+            $this->pd = new PDO($dsn, $user, $pwd, $options);
         } catch (PDOException $e) {
             throw new PDOException($e->getMessage(), (int)$e->getCode());
         }

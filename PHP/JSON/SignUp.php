@@ -23,12 +23,12 @@ if (empty($user) || empty($passwd) || empty($mail) ) {
 $stmt = "SELECT * 
          FROM USER 
          WHERE MAIL = '$mail'";
-$mailTaken = $db->pdo()->query($stmt)->rowCount();
+$mailTaken = $db->pd()->query($stmt)->rowCount();
 
 $stmt = "SELECT * 
          FROM USER 
          WHERE USERNAME = '$user'";
-$usrTaken = $db->pdo()->query($stmt)->rowCount();
+$usrTaken = $db->pd()->query($stmt)->rowCount();
 
 if($mailTaken) {
     $obj -> mailChecks[] = "This e-mail address already exist.";
@@ -78,7 +78,7 @@ if (!isset($obj -> pwdChecks) && !isset($obj -> usrChecks) && !isset($obj -> mai
     $pwd = password_hash($passwd, PASSWORD_DEFAULT);
     try {
         $stmt = $db
-            -> pdo()
+            -> pd()
             -> prepare("INSERT INTO USR VALUES (?, ?, ?, NOW(), FALSE)")
             -> execute([
                 $user,

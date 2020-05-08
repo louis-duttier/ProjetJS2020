@@ -8,7 +8,7 @@ $obj -> success = false;
 $obj -> message = "Please verify what you writing, can't log you in";
 
 $db = new Database();
-$stmt = $db->pdo()->prepare(
+$stmt = $db->pd()->prepare(
             "SELECT * ".
             "FROM USR " .
             "WHERE USERNAME = BINARY ?");
