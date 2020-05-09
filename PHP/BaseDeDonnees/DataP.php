@@ -2,7 +2,7 @@
 
 
 
-class DataPrincip
+class DataP
 {
     private $data;
 

@@ -6,9 +6,9 @@ session_start();
 
 $obj = new stdClass();
 
-$db = new Database();
+$db = new DataBase();
 
-$stmt = $db->pd()->prepare("SELECT USERNAME FROM USR WHERE USERNAME != ?");
+$stmt = $db->pdo()->prepare("SELECT USERNAME FROM USR WHERE USERNAME != ?");
 $stmt->execute([$_SESSION['user']]);
 
 foreach ($stmt as $row) {

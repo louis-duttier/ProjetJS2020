@@ -11,9 +11,8 @@
         <script src="JavaScript/JQuery.js"></script>
         <script src="JavaScript/Login&SignUp.js"></script>
         <script src="JavaScript/Login&SignUpForms.js"></script>
-        <script src="JavaScript/ShowAlerts.js"></script>
-        <script src="JavaScript/GetSeries.js"></script>
-        <script src="JavaScript/flushMessages.js"></script>
+        <script src="JavaScript/GetSeriesIndex.js"></script>
+        <script src="JavaScript/PopMsg.js"></script>
     </head>
 
     <body>
@@ -32,12 +31,12 @@
                 <form class="logForm action-form" id="sign-in-form" action="PHP/JSON/SignIn.php" method="post" enctype="multipart/form-data">
                     <input type="text" name="username" placeholder="Username">
                     <input type="password" name="passwd" placeholder="Password">
-                    <button type="submit"> Connexion </button>
+                    <button type="submit"> LOGIN </button>
                 </form>
             </div>
 
             <div id='sign-up-form-box'>
-                <h2> Enrollment </h2>
+                <h2> ENROLLMENT </h2>
                 <form class="logForm action-form" id="sign-up-form" action="PHP/JSON/SignUp.php" method="post" enctype="multipart/form-data">
                     <input type="text" name="email" placeholder="Mail Address">
                     <input type="text" name="username" placeholder="Username">
@@ -49,7 +48,48 @@
 
         <ul class="alerts"> </ul>
 
+        <div id="showSeries">
+            <button class="ButtonsUser" type="button" id="showDCComics" > DC Comics </button>
+            <button class="ButtonsUser" type="button" id="showNetflix" > Netflix </button>
+        </div>
+
         <div class="presentation">
+            <div id="DCComics">
+                <div>
+                    <img alt="DC Comics" src="Style/Image/Arrow.jpg">
+                    <span id="Arrow"> Arrow </span>
+                    <h2> 8 Seasons </h2>
+                    <h2> Start : 2012 </h2>
+                    <h2> End : 2020 </h2>
+                </div>
+
+                <div>
+                    <img alt="DC Comics" src="Style/Image/Flash.jpg">
+                    <span id="Flash"> The Flash </span>
+                    <h2> 6 Seasons </h2>
+                    <h2> Start : 2014 </h2>
+                    <h2> End : No Date </h2>
+                </div>
+            </div>
+
+            <div id="Netflix">
+                <div>
+                    <img alt="Netflix" src="Style/Image/Dark.jpg">
+                    <span id="Dark"> Dark </span>
+                    <h2> 2 Seasons </h2>
+                    <h2> Start : 2017 </h2>
+                    <h2> End : No Date </h2>
+                </div>
+
+                <div>
+                    <img alt="Netflix" src="Style/Image/3%25.jpg">
+                    <span id="TroisPerCent"> 3% </span>
+                    <h2> 3 Seasons </h2>
+                    <h2> Start : 2016 </h2>
+                    <h2> End : No Date </h2>
+                </div>
+
+            </div>
         </div>
 
         <footer>
