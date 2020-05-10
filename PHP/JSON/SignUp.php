@@ -22,12 +22,12 @@ if (empty($user) || empty($pwd) || empty($mail) ) {
 }
 
 $stmt = "SELECT * 
-         FROM USER 
+         FROM ACCOUNT 
          WHERE MAIL = '$mail'";
 $mailTaken = $db->pdo()->query($stmt)->rowCount();
 
 $stmt = "SELECT * 
-         FROM USER 
+         FROM ACCOUNT 
          WHERE USERNAME = '$user'";
 $usrTaken = $db->pdo()->query($stmt)->rowCount();
 
@@ -79,7 +79,7 @@ if (!isset($obj -> pwdChecks) && !isset($obj -> usrChecks) && !isset($obj -> mai
     try {
         $stmt = $db
             -> pdo()
-            -> prepare("INSERT INTO USR VALUES (?, ?, ?, NOW(), FALSE)")
+            -> prepare("INSERT INTO ACCOUNT VALUES (?, ?, ?, NOW(), FALSE)")
             -> execute([
                 $user,
                 $pwd,

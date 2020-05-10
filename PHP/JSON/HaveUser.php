@@ -8,7 +8,7 @@ $obj = new stdClass();
 
 $db = new DataBase();
 
-$stmt = $db->pdo()->prepare("SELECT USERNAME FROM USR WHERE USERNAME != ?");
+$stmt = $db->pdo()->prepare("SELECT USERNAME FROM ACCOUNT WHERE USERNAME != ?");
 $stmt->execute([$_SESSION['user']]);
 
 foreach ($stmt as $row) {

@@ -12,7 +12,7 @@ $obj -> msg = "Problem encountered when sending your note. Please retry in a few
 $stmt =
     $db
         ->pdo()
-        ->query("SELECT * FROM NOTES WHERE IDV = " . $_GET['video'] . " AND USR = '" . $_SESSION['user'] . "'")
+        ->query("SELECT * FROM NOTES WHERE IDV = " . $_GET['video'] . " AND ACCOUNT = '" . $_SESSION['user'] . "'")
         ->fetch();
 if ($stmt) {
     $rate = $stmt['NOTE'];

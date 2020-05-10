@@ -11,7 +11,7 @@ $obj -> message = "Please verify what you writing, can't log you in";
 $db = new DataBase();
 $stmt = $db->pdo()->prepare(
             "SELECT * ".
-            "FROM USR " .
+            "FROM ACCOUNT " .
             "WHERE USERNAME = BINARY ?");
 $stmt->execute([$_POST['username']]);
 
