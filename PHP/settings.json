@@ -1,0 +1,7 @@
+{
+  "db": {
+    "server" : "mysql-resumes.alwaysdata.net",
+    "username" : "resumes",
+    "password" : "Lalm83220"
+  }
+}

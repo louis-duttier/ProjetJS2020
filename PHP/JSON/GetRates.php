@@ -7,8 +7,8 @@ $obj->note = 0;
 
 $db = new DataBase();
 
-$stmt = $db->pdo()->prepare("SELECT AVG(NOTE) AS MOY FROM NOTES WHERE IDV = ?");
-$stmt->execute([$_GET['IDV']]);
+$stmt = $db->pdo()->prepare("SELECT AVG(NOTE) AS MOY FROM NOTES WHERE ID = ?");
+$stmt->execute([$_GET['ID']]);
 
 $obj->note = number_format($stmt->fetch()['MOY'], 2);
 

@@ -1,6 +1,5 @@
 <?php
 
-require_once '../BaseDeDonnees/DataP.php';
 require_once '../BaseDeDonnees/DataBase.php';
 session_start();
 
