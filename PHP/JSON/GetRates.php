@@ -1,6 +1,6 @@
 <?php
 
-require_once '../BaseDeDonnees/DataBase.php';
+require_once '../BaseDeD/DataBase.php';
 
 $obj = new stdClass();
 $obj->note = 0;

@@ -1,6 +1,6 @@
 <?php
 
-require_once '../BaseDeDonnees/DataBase.php';
+require_once '../BaseDeD/DataBase.php';
 session_start();
 $db = new DataBase();
 

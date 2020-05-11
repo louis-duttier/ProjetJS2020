@@ -1,9 +1,0 @@
-{
-  "db": {
-    "server" : "mysql-resumes.alwaysdata.net",
-    "charset" : "utf-8",
-    "name" : "resumes_database",
-    "username" : "resumes",
-    "password" : "Lalm83220"
-  }
-}

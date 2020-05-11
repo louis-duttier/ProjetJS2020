@@ -7,13 +7,13 @@
         }).done((data) => {
             console.log(data);
             if (data.disconnected) {
-                createAlert('info', data.disconnected);
+                haveMsgAlert('info', data.disconnected);
             }
             if (data.deleted) {
-                createAlert('info', data.deleted);
+                haveMsgAlert('info', data.deleted);
             }
         }).fail(() => {
-            createAlert('error', 'Fatal error !');
+            haveMsgAlert('error', 'Fatal error !');
         })
     });
 })();

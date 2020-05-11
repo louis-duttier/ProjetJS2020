@@ -22,14 +22,14 @@
 
                 else
                 {
-                    createAlert('error', data.message);
+                    haveMsgAlert('error', data.message);
                 }
 
                 if (data.pwdChecks)
                 {
                     data.pwdChecks.forEach(msg =>
                     {
-                        createAlert('error', msg);
+                        haveMsgAlert('error', msg);
                     });
                 }
 
@@ -37,7 +37,7 @@
                 {
                     data.mailChecks.forEach(msg =>
                     {
-                        createAlert('error', msg);
+                        haveMsgAlert('error', msg);
                     });
                 }
 
@@ -45,14 +45,14 @@
                 {
                     data.usrChecks.forEach(msg =>
                     {
-                        createAlert('error', msg);
+                        haveMsgAlert('error', msg);
                     });
                 }
             }
             )
             .fail(() =>
             {
-                createAlert('error', 'Fatal error !');
+                haveMsgAlert('error', 'Fatal error !');
             });
             return false;
         })

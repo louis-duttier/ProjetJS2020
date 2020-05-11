@@ -1,7 +1,6 @@
 <?php
 
-require_once '../BaseDeDonnees/DataP.php';
-require_once '../BaseDeDonnees/DataBase.php';
+require_once '../BaseDeD/DataBase.php';
 session_start();
 
 $obj = new stdClass();
