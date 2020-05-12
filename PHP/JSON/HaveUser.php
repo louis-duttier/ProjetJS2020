@@ -1,12 +1,12 @@
 <?php
 
 
-require_once '../BaseDeD/DataBase.php';
+require_once '../BaseDeD/dataBase.php';
 session_start();
 
 $obj = new stdClass();
 
-$db = new DataBase();
+$db = new dataBase();
 
 $stmt = $db->pdo()->prepare("SELECT USERNAME FROM ACCOUNT WHERE USERNAME != ?");
 $stmt->execute([$_SESSION['user']]);

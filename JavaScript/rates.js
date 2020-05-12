@@ -8,7 +8,7 @@ class GetRate {
         'use strict';
         let self = this;
         $.ajax({
-            url: '../PHP/JSON/GetRates.php',
+            url: '../PHP/JSON/getRates.php',
             method: 'GET',
             data: 'ID=' + self.id
         }).done((data) => {
@@ -18,7 +18,7 @@ class GetRate {
         });
     }
 
-    show(where) {
+    show(where=".notes") {
         'use strict';
         let self = this;
         $(where)

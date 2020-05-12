@@ -1,12 +1,12 @@
 <?php
 
-require_once '../BaseDeD/DataBase.php';
+require_once '../BaseDeD/dataBase.php';
 session_start();
 
 $obj = new stdClass();
 $obj -> success = false;
 
-$db = new DataBase();
+$db = new dataBase();
 
 $user = $_POST['username'];
 $pwd = $_POST['password'];
@@ -93,6 +93,10 @@ if (!isset($obj -> pwdChecks) && !isset($obj -> usrChecks) && !isset($obj -> mai
     }
 } else {
     $obj -> message = "Couldn't process registration.";
+}
+
+function stock($stmt) {
+    return $stmt;
 }
 
 header('Cache-Control: no-cache, must-revalidate');

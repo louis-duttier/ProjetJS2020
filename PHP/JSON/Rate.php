@@ -1,8 +1,8 @@
 <?php
 
-require_once '../BaseDeD/DataBase.php';
+require_once '../BaseDeD/dataBase.php';
 session_start();
-$db = new DataBase();
+$db = new dataBase();
 
 
 $obj = new stdClass();

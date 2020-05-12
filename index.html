@@ -9,12 +9,11 @@
         <link rel="stylesheet" href="Style/Css/style.css">
         <link rel="icon" href="Style/Image/S.png">
         <script src="JavaScript/JQuery.js"></script>
-        <script src="JavaScript/Login&SignUp.js"></script>
-        <script src="JavaScript/Login&SignUpForms.js"></script>
-        <script src="JavaScript/GetSeriesIndex.js"></script>
-        <script src="JavaScript/Class/Series.js"></script>
-        <script src="JavaScript/Class/clickSeriesIndex.js"></script>
-        <script src="JavaScript/PopMsg.js"></script>
+        <script src="JavaScript/login&SignUp.js"></script>
+        <script src="JavaScript/login&SignUpForms.js"></script>
+        <script src="JavaScript/getSeriesIndex.js"></script>
+        <script src="JavaScript/showSeries.js"></script>
+        <script src="JavaScript/popMsg.js"></script>
     </head>
 
     <body>
@@ -30,7 +29,7 @@
 
             <div id='sign-in-form-box'>
                 <h2> LOGIN </h2>
-                <form class="logForm action-form" id="sign-in-form" action="PHP/JSON/SignIn.php" method="post" enctype="multipart/form-data">
+                <form class="logForm action-form" id="sign-in-form" action="PHP/JSON/signIn.php" method="post" enctype="multipart/form-data">
                     <input type="text" name="username" placeholder="Username">
                     <input type="password" name="passwd" placeholder="Password">
                     <button type="submit"> LOGIN </button>
@@ -39,7 +38,7 @@
 
             <div id='sign-up-form-box'>
                 <h2> ENROLLMENT </h2>
-                <form class="logForm action-form" id="sign-up-form" action="PHP/JSON/SignUp.php" method="post" enctype="multipart/form-data">
+                <form class="logForm action-form" id="sign-up-form" action="PHP/JSON/signUp.php" method="post" enctype="multipart/form-data">
                     <input type="text" name="email" placeholder="Mail Address">
                     <input type="text" name="username" placeholder="Username">
                     <input type="password" name="passwd" placeholder="Password">

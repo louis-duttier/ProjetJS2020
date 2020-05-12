@@ -1,11 +1,11 @@
 <?php
 
-require_once '../BaseDeD/DataBase.php';
+require_once '../BaseDeD/dataBase.php';
 
 $obj = new stdClass();
 $obj->note = 0;
 
-$db = new DataBase();
+$db = new dataBase();
 
 $stmt = $db->pdo()->prepare("SELECT AVG(NOTE) AS MOY FROM NOTES WHERE ID = ?");
 $stmt->execute([$_GET['ID']]);

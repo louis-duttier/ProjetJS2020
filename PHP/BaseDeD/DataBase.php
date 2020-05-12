@@ -1,6 +1,6 @@
 <?php
 
-class DataBase {
+class dataBase {
     private $pdo;
 
     public function __construct() {
