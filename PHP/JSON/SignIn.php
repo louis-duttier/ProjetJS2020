@@ -1,31 +1,26 @@
 <?php
 
-require_once '../BaseDeD/dataBase.php';
+require('config.php');
 session_start();
 
-$obj = new stdClass();
-$obj->success = false;
-$obj->message = "Please verify what you writing, can't log you in";
+if (isset($_POST['USERNAME'])){
+    $username = stripslashes($_REQUEST['USERNAME']);
+    $username = mysqli_real_escape_string($conn, $username);
 
-$db = new dataBase();
-$stmt = $db->pdo()->prepare(
-    "SELECT * " .
-    "FROM ACCOUNT " .
-    "WHERE USERNAME = BINARY ?");
-$stmt->execute([$_POST['username']]);
+    $password = stripslashes($_REQUEST['PASSWORD']);
+    $password = mysqli_real_escape_string($conn, $password);
 
-function stock($stmt) {
-    return $stmt;
-}
+    $query = "SELECT * 
+              FROM ACCOUNT 
+              WHERE USSERNAME='$username' AND PASSWORD='".hash('sha256', $password)."'";
 
-foreach ($stmt as $row) {
-    if (password_verify($_POST['pwd'], $row['PASSWORD'])) {
-        $obj->success = true;
-        $obj->message = "Welcome to resumeS " . $_POST['username'] . " !";
-        $_SESSION['user'] = $_POST['username'];
-        $_SESSION['justLogged'] = true;
-        break;
+    $result = mysqli_query($conn,$query) or die(mysql_error());
+    $rows = mysqli_num_rows($result);
+
+    if($rows==1){
+        $_SESSION['username'] = $username;
+        header("Location: index.php");
+    } else{
+        $message = "Username or password is incorrect.";
     }
 }
-
-echo json_encode($obj);

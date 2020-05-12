@@ -1,6 +1,6 @@
 <?php
 
-require_once '../BaseDeD/dataBase.php';
+require ('config.php');
 
 $obj = new stdClass();
 $obj->note = 0;
@@ -17,4 +17,3 @@ header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-type: application/json');
 
 echo json_encode($obj);
-
