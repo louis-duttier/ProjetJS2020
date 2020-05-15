@@ -51,6 +51,14 @@ html, body {
     transition: 0.2s;
 }
 
+.designAlerts {
+    font-weight : bold;
+    cursor : pointer;
+    padding-left : 0.8vw;
+    margin-left : 0.8vw;
+    border-left : 2px solid rgba(255,255,255,0.5);
+}
+
 #showSeries {
     width: 100%;
     height: 18vw;
@@ -94,7 +102,7 @@ html, body {
     padding: 0;
     z-index: 999;
     left: 50%;
-    top: 5%;
+    top: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,7 +114,7 @@ html, body {
     padding: 0.5vw 1vw;
     font-size: 1vw;
     border: solid 2px black;
-    border-radius: 25px;
+    border-radius: 5px;
     margin-bottom: 0.5vw;
     display: flex;
     justify-content: center;
@@ -194,7 +202,7 @@ footer {
     display: none;
     background: #FFFFFF;
     align-items: center;
-    margin-left: -34vw;
+    margin-left: -38vw;
 }
 
 #sign-up-form-box > h2, #sign-in-form-box > h2 {
@@ -357,22 +365,26 @@ footer {
 }
 
 .error {
-    background: #A50034;
+    background: black;
     color: white;
+    border: black solid 2px;
+
 }
 
 .info {
-    background: #F1B434;
+    background: #101820;
     color: white;
 }
 
 .success {
-    background: #7CCC6C;
-    color: white;
+    background: #FFFFFF;
+    color: black;
+    border: #FFFFFF solid 2px;
+
 }
 
 .result {
-    background: rgba(16, 24, 32, 0.6);
+    background: #101820;
     color: white;
     display: flex;
     justify-content: center;
@@ -404,7 +416,7 @@ footer {
     align-items: center;
 }
 
-.cover-container>img {
+.cover-container > img {
     width: 100%;
     position: relative;
 }
@@ -450,8 +462,9 @@ footer {
 #trash:hover {
     transition: 0.2s;
     transform: scale(1.1);
-    color: #b60c17;
-    border-color: #b60c17;
+    color: black;
+    background: #FFFFFF;
+    border-color: black;
 }
 
 #confirm-container {
@@ -530,11 +543,11 @@ footer {
 }
 
 .minus {
-    background: #b60c17;
+    background: black;
 }
 
 .plus {
-    background: #7CCC6C;
+    background: #101820;
 }
 
 .rateBtn {
@@ -554,7 +567,7 @@ footer {
 
 .rateBtn:hover {
     transition: 0.2s;
-    background: #F1B434;
+    background: black;
 }
 
 
@@ -575,9 +588,9 @@ footer {
 .del {
     cursor: pointer;
     border-radius: 5px;
-    border: solid 1px white;
-    color: white;
-    background: #333F48;
+    border: solid 1px #101820;
+    color: #101820;
+    background: black;
     height: 1.75vw;
     width: 1.75vw;
     font-size: 1vw;

@@ -13,7 +13,7 @@
                 haveMsgAlert('info', data.deleted);
             }
         }).fail(() => {
-            haveMsgAlert('error', 'Fatal error !');
+            haveMsgAlert('error', 'Un problème est survenue !');
         })
     });
 })();

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en", lang="fr">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <title>ResumeS</title>
 
-        <meta name="description" content="ResumeSerie Easily">
+        <meta name="description" content="Le site qui 'ResumeSerie' rapidement !">
         <meta name="author" content="DUTTIER Louis">
         <link rel="stylesheet" href="Style/Css/style.css">
         <link rel="icon" href="Style/Image/S.png">
         <script src="JavaScript/JQuery.js"></script>
-        <script src="JavaScript/login&SignUp.js"></script>
-        <script src="JavaScript/login&SignUpForms.js"></script>
+        <script src="JavaScript/loginSignUp.js"></script>
+        <script src="JavaScript/loginSignUpForms.js"></script>
         <script src="JavaScript/getSeriesIndex.js"></script>
         <script src="JavaScript/showSeries.js"></script>
+        <script src="JavaScript/haveMsgAlerts.js"></script>
         <script src="JavaScript/popMsg.js"></script>
     </head>
 
@@ -23,26 +24,26 @@
             </span>
 
             <div id="actions">
-                <button class="ButtonsUser" type="button" id="sign-in" > Login </button>
-                <button class="ButtonsUser" type="button" id="sign-up" > Register </button>
+                <button class="ButtonsUser" type="button" id="sign-in" > Connexion </button>
+                <button class="ButtonsUser" type="button" id="sign-up" > Inscription </button>
             </div>
 
             <div id='sign-in-form-box'>
-                <h2> LOGIN </h2>
-                <form class="logForm action-form" id="sign-in-form" action="PHP/JSON/signIn.php" method="post" enctype="multipart/form-data">
-                    <input type="text" name="username" placeholder="Username">
-                    <input type="password" name="passwd" placeholder="Password">
-                    <button type="submit"> LOGIN </button>
+                <h2> Connexion </h2>
+                <form class="logForm action-form" id="sign-in-form" action="PHP/JSON/signIn2.php" method="post" enctype="multipart/form-data">
+                    <input type="text" name="username" placeholder="Pseudonyme">
+                    <input type="password" name="password" placeholder="Mot de passe">
+                    <button type="submit"> Connexion </button>
                 </form>
             </div>
 
             <div id='sign-up-form-box'>
-                <h2> ENROLLMENT </h2>
-                <form class="logForm action-form" id="sign-up-form" action="PHP/JSON/signUp.php" method="post" enctype="multipart/form-data">
-                    <input type="text" name="email" placeholder="Mail Address">
-                    <input type="text" name="username" placeholder="Username">
-                    <input type="password" name="passwd" placeholder="Password">
-                    <button type="submit"> REGISTER </button>
+                <h2> Inscription </h2>
+                <form class="logForm action-form" id="sign-up-form" action="PHP/JSON/signUp2.php" method="post" enctype="multipart/form-data">
+                    <input type="text" name="email" placeholder="Addresse Mail">
+                    <input type="text" name="username" placeholder="Pseudonyme">
+                    <input type="password" name="password" placeholder="Mot de passe">
+                    <button type="submit"> Inscription </button>
                 </form>
             </div>
         </nav>
@@ -55,42 +56,6 @@
         </div>
 
         <div class="presentation">
-            <!--<div id="DCComics">
-                <div>
-                    <img alt="DC Comics" src="Style/Image/Arrow.jpg">
-                    <span id="Arrow"> Arrow </span>
-                    <h2> 8 Seasons </h2>
-                    <h2> Start : 2012 </h2>
-                    <h2> End : 2020 </h2>
-                </div>
-
-                <div>
-                    <img alt="DC Comics" src="Style/Image/Flash.jpg">
-                    <span id="Flash"> The Flash </span>
-                    <h2> 6 Seasons </h2>
-                    <h2> Start : 2014 </h2>
-                    <h2> End : No Date </h2>
-                </div>
-            </div>
-
-            <div id="Netflix">
-                <div>
-                    <img alt="Netflix" src="Style/Image/Dark.jpg">
-                    <span id="Dark"> Dark </span>
-                    <h2> 2 Seasons </h2>
-                    <h2> Start : 2017 </h2>
-                    <h2> End : No Date </h2>
-                </div>
-
-                <div>
-                    <img alt="Netflix" src="Style/Image/3%25.jpg">
-                    <span id="TroisPerCent"> 3% </span>
-                    <h2> 3 Seasons </h2>
-                    <h2> Start : 2016 </h2>
-                    <h2> End : No Date </h2>
-                </div>
-
-            </div>-->
         </div>
 
         <footer>

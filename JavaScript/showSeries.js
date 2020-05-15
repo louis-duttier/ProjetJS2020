@@ -9,11 +9,11 @@
                             $('<span id="Arrow"/>')
                                 .text("Arrow"),
                             $('<h2/>')
-                                .text("8 Seasons"),
+                                .text("8 Saisons"),
                             $('<h2/>')
-                                .text("Start : 2012"),
+                                .text("Début : 2012"),
                             $('<h2/>')
-                                .text("End : 2020")
+                                .text("Fin : 2020")
                         ),
 
                         $('<div/>').append(
@@ -21,11 +21,11 @@
                             $('<span id="Flash"/>')
                                 .text("The Flash"),
                             $('<h2/>')
-                                .text("6 Seasons"),
+                                .text("6 Saisons"),
                             $('<h2/>')
-                                .text("Start : 2014"),
+                                .text("Début : 2014"),
                             $('<h2/>')
-                                .text("End : No Date")
+                                .text("Fin : Pas définie")
                         ),
                     ),
 
@@ -35,11 +35,11 @@
                             $('<span id="Dark"/>')
                                 .text("Dark"),
                             $('<h2/>')
-                                .text("2 Seasons"),
+                                .text("2 Saisons"),
                             $('<h2/>')
-                                .text("Start : 2017"),
+                                .text("Début : 2017"),
                             $('<h2/>')
-                                .text("End : No Date")
+                                .text("Fin : Pas définie")
                         ),
 
                         $('<div/>').append(
@@ -47,11 +47,11 @@
                             $('<span id="TroisPerCent"/>')
                                 .text("3%"),
                             $('<h2/>')
-                                .text("3 Seasons"),
+                                .text("3 Saisons"),
                             $('<h2/>')
-                                .text("Start : 2016"),
+                                .text("Début : 2016"),
                             $('<h2/>')
-                                .text("End : No Date")
+                                .text("Fin : Pas définie")
                         ),
                     ),
             )

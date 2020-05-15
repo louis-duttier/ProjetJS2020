@@ -6,18 +6,26 @@
                 $('<div id="DCComics"/>').append(
                     $('<div />').append(
                         $('<img alt="DC Comics" src="../Style/Image/Arrow.jpg"/>'),
-                        $('<span id="Arrow"/>').text("Arrow"),
-                        $('<h2/>').text("8 Seasons"),
-                        $('<h2/>').text("Start : 2012"),
-                        $('<h2/>').text("End : 2020")
+                        $('<span id="Arrow"/>')
+                            .text("Arrow"),
+                        $('<h2/>')
+                            .text("8 Saisons"),
+                        $('<h2/>')
+                            .text("Début : 2012"),
+                        $('<h2/>')
+                            .text("Fin : 2020")
                     ),
 
                     $('<div/>').append(
                         $('<img alt="DC Comics" src="../Style/Image/Flash.jpg"/>'),
-                        $('<span id="Flash"/>').text("The Flash"),
-                        $('<h2/>').text("6 Seasons"),
-                        $('<h2/>').text("Start : 2014"),
-                        $('<h2/>').text("End : No Date")
+                        $('<span id="Flash"/>')
+                            .text("The Flash"),
+                        $('<h2/>')
+                            .text("6 Saisons"),
+                        $('<h2/>')
+                            .text("Début : 2014"),
+                        $('<h2/>')
+                            .text("Fin : Pas définie")
                     ),
                 ),
 
@@ -44,46 +52,46 @@
 
                             ),
                             $('<ul/>')
-                                .text("Trailer :")
+                                .text("Bandes Annonces :")
                                 .append(
                                     $('<li/>').append(
                                         $('<a href="https://www.youtube.com/watch?v=sKr3mjsVZzU" target="_blank"/>')
-                                            .text("Season 1")
+                                            .text("Saison 1")
                                     ),
 
                                     $('<li/>').append(
                                         $('<a href="https://www.youtube.com/watch?v=prvYfA1UlM4" target="_blank"/>')
-                                            .text("Season 2")
+                                            .text("Saison 2")
                                     ),
 
                                     $('<li/>').append(
                                         $('<a href="https://www.youtube.com/watch?v=9l__OaT6gq8" target="_blank"/>')
-                                            .text("Season 3")
+                                            .text("Saison 3")
                                     ),
 
                                     $('<li/>').append(
                                         $('<a href="https://www.youtube.com/watch?v=uld5HYianBg" target="_blank"/>')
-                                            .text("Season 4")
+                                            .text("Saison 4")
                                     ),
 
                                     $('<li/>').append(
                                         $('<a href="https://www.youtube.com/watch?v=1tgsxdQ-bzM" target="_blank"/>')
-                                            .text("Season 5")
+                                            .text("Saison 5")
                                     ),
 
                                     $('<li/>').append(
                                         $('<a href="https://www.youtube.com/watch?v=IpCOMDpmJ28" target="_blank"/>')
-                                            .text("Season 6")
+                                            .text("Saison 6")
                                     ),
 
                                     $('<li/>').append(
                                         $('<a href="https://www.youtube.com/watch?v=D5J9h0HPklE" target="_blank"/>')
-                                            .text("Season 7")
+                                            .text("Saison 7")
                                     ),
 
                                     $('<li/>').append(
                                         $('<a href="https://www.youtube.com/watch?v=2yrviapP5uY" target="_blank"/>')
-                                            .text("Season 8")
+                                            .text("Saison 8")
                                     )
                                 )
                         )
@@ -111,36 +119,36 @@
                             ),
 
                             $('<ul/>')
-                                .text("Trailer :")
+                                .text("Bandes Annonces :")
                                 .append(
                                     $('<li/>').append(
                                         $('<a href="https://www.youtube.com/watch?v=Yj0l7iGKh8g" target="_blank"/>')
-                                            .text("Season 1")
+                                            .text("Saison 1")
                                     ),
 
                                     $('<li/>').append(
                                         $('<a href="https://www.youtube.com/watch?v=UMRBs0-OXCA" target="_blank"/>')
-                                            .text("Season 2")
+                                            .text("Saison 2")
                                     ),
 
                                     $('<li/>').append(
                                         $('<a href="https://www.youtube.com/watch?v=Pz8JSgMERiQ" target="_blank"/>')
-                                            .text("Season 3")
+                                            .text("Saison 3")
                                     ),
 
                                     $('<li/>').append(
                                         $('<a href="https://www.youtube.com/watch?v=0kbjrjHBNA8" target="_blank"/>')
-                                            .text("Season 4")
+                                            .text("Saison 4")
                                     ),
 
                                     $('<li/>').append(
                                         $('<a href="https://www.youtube.com/watch?v=Eunrm_b_EWs" target="_blank"/>')
-                                            .text("Season 5")
+                                            .text("Saison 5")
                                     ),
 
                                     $('<li/>').append(
                                         $('<a href="https://www.youtube.com/watch?v=4jwROC6JfcI" target="_blank"/>')
-                                            .text("Season 6")
+                                            .text("Saison 6")
                                     )
                                 )
                         ),
@@ -155,18 +163,26 @@
                 $('<div id="Netflix"/>').append(
                     $('<div/>').append(
                         $('<img alt="Netflix" src="../Style/Image/Dark.jpg"/>'),
-                        $('<span id="Dark"/>').text("Dark"),
-                        $('<h2/>').text("2 Seasons"),
-                        $('<h2/>').text("Start : 2017"),
-                        $('<h2/>').text("End : No Date")
+                        $('<span id="Dark"/>')
+                            .text("Dark"),
+                        $('<h2/>')
+                            .text("2 Saisons"),
+                        $('<h2/>')
+                            .text("Début : 2017"),
+                        $('<h2/>')
+                            .text("Fin : Pas définie")
                     ),
 
                     $('<div/>').append(
                         $('<img alt="Netflix" src="../Style/Image/3%25.jpg>'),
-                        $('<span id="TroisPerCent"/>').text("3%"),
-                        $('<h2/>').text("3 Seasons"),
-                        $('<h2/>').text("Start : 2016"),
-                        $('<h2/>').text("End : No Date")
+                        $('<span id="TroisPerCent"/>')
+                            .text("3%"),
+                        $('<h2/>')
+                            .text("3 Saisons"),
+                        $('<h2/>')
+                            .text("Début : 2016"),
+                        $('<h2/>')
+                            .text("Fin : Pas définie")
                     ),
                 ),
 
@@ -193,16 +209,16 @@
                             ),
 
                             $('<ul/>')
-                                .text("Trailer :")
+                                .text("Bandes Annonces :")
                                 .append(
                                     $('<li/>').append(
                                         $('<a target="_blank"/>')
-                                            .text("Season 1")
+                                            .text("Saison 1")
                                     ),
 
                                     $('<li/>').append(
                                         $('<a target="_blank"/>')
-                                            .text("Season 2")
+                                            .text("Saison 2")
                                     )
                                 )
                         )
@@ -230,21 +246,21 @@
                             ),
 
                             $('<ul/>')
-                                .text("Trailer :")
+                                .text("Bandes Annonces :")
                                 .append(
                                     $('<li/>').append(
                                         $('<a target="_blank"/>')
-                                            .text("Season 1")
+                                            .text("Saison 1")
                                     ),
 
                                     $('<li/>').append(
                                         $('<a target="_blank"/>')
-                                            .text("Season 2")
+                                            .text("Saison 2")
                                     ),
 
                                     $('<li/>').append(
                                         $('<a target="_blank"/>')
-                                            .text("Season 2")
+                                            .text("Saison 3")
                                     )
                                 )
                         )
