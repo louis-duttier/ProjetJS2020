@@ -6,6 +6,8 @@
             .on('click', function () {
                 if ($(this).data('open')) {
                     $('#DCComics').slideUp('linear');
+                    $('#description-box-arrow').slideUp('linear');
+                    $('#description-box-flash').slideUp('linear');
                 } else {
                     $('#DCComics').slideDown('linear').css({
                         display: 'flex'
