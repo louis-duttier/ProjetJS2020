@@ -1,5 +1,5 @@
 # ResumeS : Le site qui 'ResumeSerie' rapidement !
-Site Web : [resumes.alwaysdata.net] (resumes.alwaysdata.net)
+Site Web : [resumes.alwaysdata.net](resumes.alwaysdata.net)
 
 Projet de site web choisi parmi une liste donnée par Mr. PONS, professeur de Programmation Web (module M4103C).
 Ce site permet de consulter les informations essentielles concernant des séries TV.
@@ -8,6 +8,7 @@ Ce site permet de consulter les informations essentielles concernant des séries
 ### Utilisateur
 
 USERNAME : Barry
+
 PASSWORD : Barry888+=-
 
 # Inscription
