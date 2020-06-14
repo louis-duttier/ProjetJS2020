@@ -18,6 +18,7 @@
                 } else if ($('#Dark').data('open')) {
                     let other = $('#Dark');
                     $('#description-box-dark').slideUp('linear');
+                    // $('#notes3').slideUp('linear');
                     other.data('open', !other.data('open'));
                     setTimeout(() => {
                         $('#description-box-arrow').slideDown('linear').css({
@@ -58,6 +59,7 @@
                 } else if ($('#Dark').data('open')) {
                     let other = $('#Dark');
                     $('#description-box-dark').slideUp('linear');
+                    // $('#notes3').slideUp('linear');
                     other.data('open', !other.data('open'));
                     setTimeout(() => {
                         $('#description-box-flash').slideDown('linear').css({
@@ -67,6 +69,7 @@
                 } else if ($('#TroisPerCent').data('open')) {
                     let other = $('#TroisPerCent');
                     $('#description-box-troispercent').slideUp('linear');
+                    // $('#notes4').slideUp('linear');
                     other.data('open', !other.data('open'));
                     setTimeout(() => {
                         $('#description-box-flash').slideDown('linear').css({
@@ -88,7 +91,7 @@
                     $('#description-box-dark').slideUp('linear');
                 } else if ($('#Arrow').data('open')) {
                     let other = $('#Arrow');
-                    $('#description-box-Arrow').slideUp('linear');
+                    $('#description-box-arrow').slideUp('linear');
                     other.data('open', !other.data('open'));
                     setTimeout(() => {
                         $('#description-box-dark').slideDown('linear').css({
@@ -107,6 +110,7 @@
                 } else if ($('#TroisPerCent').data('open')) {
                     let other = $('#TroisPerCent');
                     $('#description-box-troispercent').slideUp('linear');
+                    // $('#notes4').slideUp('linear');
                     other.data('open', !other.data('open'));
                     setTimeout(() => {
                         $('#description-box-dark').slideDown('linear').css({
@@ -128,7 +132,7 @@
                     $('#description-box-troispercent').slideUp('linear');
                 } else if ($('#Arrow').data('open')) {
                     let other = $('#Arrow');
-                    $('#description-box-Arrow').slideUp('linear');
+                    $('#description-box-arrow').slideUp('linear');
                     other.data('open', !other.data('open'));
                     setTimeout(() => {
                         $('#description-box-troispercent').slideDown('linear').css({

@@ -12,44 +12,114 @@
     <script src="JavaScript/loginSignUp.js"></script>
     <script src="JavaScript/loginSignUpForms.js"></script>
     <script src="JavaScript/userIsConnected.js"></script>
+    <script src="JavaScript/deleteAccountBox.js"></script>
     <script src="JavaScript/haveMsgAlerts.js"></script>
-    <script src="JavaScript/deleteAccount.js"></script>
     <script src="JavaScript/getSeriesPrincipal.js"></script>
     <script src="JavaScript/getDescription.js"></script>
-    <script src="JavaScript/showSeries&Description.js"></script>
+    <script src="JavaScript/showDescription.js"></script>
     <script src="JavaScript/rates.js"></script>
 
 </head>
 
 <body>
-    <nav id="navbar">
+<nav id="navbar">
         <span id="logoBox">
                 <img id="logo" src="Style/Image/logo.png" alt="">
         </span>
 
-        <div id="actions">
-            <button class="ButtonsUser" type="button" id="sign-in"> Connexion </button>
-            <button class="ButtonsUser" type="button" id="sign-up" > Inscription </button>
+    <div id="actions">
+        <button class="ButtonsUser" type="button" id="sign-in"> Connexion</button>
+        <button class="ButtonsUser" type="button" id="sign-up"> Inscription</button>
+    </div>
+</nav>
+
+<div id="choix">
+</div>
+
+<div class="haveAlerts"></div>
+
+<div id="showSeries">
+    <button class="ButtonsUser" type="button" id="showDCComics"> DC Comics</button>
+    <button class="ButtonsUser" type="button" id="showNetflix"> Netflix</button>
+</div>
+
+<div class="presentation">
+    <div id="DCComics">
+        <div>
+            <img alt="DC Comics" src="Style/Image/Arrow.jpg">
+            <span id="Arrow"> Arrow </span>
+            <h2> 8 Saisons </h2>
+            <h2> Début : 2012 </h2>
+            <h2> Fin : 2020 </h2>
         </div>
-    </nav>
 
-    <div class="haveAlerts"></div>
-
-    <div id="profile-box"></div>
-
-    <div id="showSeries">
-        <button class="ButtonsUser" type="button" id="showDCComics" > DC Comics </button>
-        <button class="ButtonsUser" type="button" id="showNetflix" > Netflix </button>
+        <div>
+            <img alt="DC Comics" src="Style/Image/Flash.jpg">
+            <span id="Flash"> The Flash </span>
+            <h2> 6 Saisons </h2>
+            <h2> Début : 2014 </h2>
+            <h2> Fin : Pas définie </h2>
+        </div>
     </div>
 
-    <div class="presentation">
+    <div id="description-box-arrow">
+    </div>
+    <!--    <div id="notes1">-->
+    <!--        <script type="text/javascript">-->
+    <!--            ListeEtoileCreee('notes1', 5);-->
+    <!--        </script>-->
+    <!--    </div>-->
+
+    <div id="description-box-flash">
+    </div>
+    <!--    <div id="notes2">-->
+    <!--        <script type="text/javascript">-->
+    <!--            ListeEtoileCreee('notes2', 5);-->
+    <!--        </script>-->
+    <!--    </div>-->
+
+    <div id="Netflix">
+        <div>
+            <img alt="DC Comics" src="Style/Image/Dark.jpg">
+            <span id="Dark"> Dark </span>
+            <h2> 2 Saisons </h2>
+            <h2> Début : 2017 </h2>
+            <h2> Fin : Pas définie </h2>
+        </div>
+
+
+        <div>
+            <img alt="DC Comics" src="Style/Image/3%25.jpg">
+            <span id="TroisPerCent"> 3% </span>
+            <h2> 3 Saisons </h2>
+            <h2> Début : 2016 </h2>
+            <h2> Fin : Pas définie </h2>
+        </div>
     </div>
 
-    <footer>
-        <span> DUT Informatique - Alternant 2ème Année </span>
-        <span> Olivier PONS | M4103C </span>
-        <span> Louis DUTTIER </span>
-        <span> IUT Aix-Marseille Université </span>
-    </footer>
+    <div id="description-box-dark">
+    </div>
+    <!--    <div id="notes3">-->
+    <!--        <script type="text/javascript">-->
+    <!--            ListeEtoileCreee('notes3', 5);-->
+    <!--        </script>-->
+    <!--    </div>-->
+
+    <div id="description-box-troispercent">
+    </div>
+    <!--    <div id="notes4">-->
+    <!--        <script type="text/javascript">-->
+    <!--            ListeEtoileCreee('notes4', 5);-->
+    <!--        </script>-->
+    <!--    </div>-->
+</div>
+
+
+<footer>
+    <span> DUT Informatique - Alternant 2ème Année </span>
+    <span> Olivier PONS | M4103C </span>
+    <span> Louis DUTTIER </span>
+    <span> IUT Aix-Marseille Université </span>
+</footer>
 </body>
 </html>

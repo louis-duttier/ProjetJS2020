@@ -3,16 +3,15 @@
 session_start();
 
 $obj = new stdClass();
-$obj -> message = "Connectez-vous avant de pouvoir voir la description des séries";
+$obj->message = "Connectez-vous avant de pouvoir voir la description des séries";
 
 if (isset($_SESSION['user'])) {
-    $obj -> success = true;
-    $obj -> message = "";
+    $obj->success = true;
+    $obj->message = "";
     if ($_SESSION['justLogged']) {
         unset($_SESSION['justLogged']);
-        $obj -> message = "Bonjour " . $_SESSION['user'] . " !";
+        $obj->message = "Bonjour " . $_SESSION['user'] . " !";
     }
-    $obj -> is_admin = $_SESSION['admin'];
 }
 
 header('Cache-Control: no-cache, must-revalidate');

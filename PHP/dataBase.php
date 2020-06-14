@@ -1,17 +1,16 @@
 <?php
 
-class dataBase {
+class dataBase
+{
     private $pdo;
 
-    public function __construct() {
+    public function __construct()
+    {
 
-        $hst = "mysql-resumes.alwaysdata.net";
-        $charset = "utf-8";
-        $db = "resumes_database";
+        $dsn = "mysql:dbname=resumes_database;host=mysql-resumes.alwaysdata.net:3306";
         $user = "resumes";
         $pwd = "Lalm83220";
 
-        $dsn = 'mysql:host=' . $hst . ';dbname=' . $db . ';charset=' . $charset;
         $options = [
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
@@ -25,7 +24,8 @@ class dataBase {
         }
     }
 
-    public function pdo() {
+    public function pdo()
+    {
         return $this->pdo;
     }
 }
