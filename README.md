@@ -56,6 +56,3 @@ Un résumé avec anecdotes puis liste des saisons avec bandes annonces mises en 
 
 Pour le profil, un bouton "Supprimer son compte" est disponible. il est demandé de confirmer cette suppression par l'utilisateur.
 Une fois cette action faite, l'utilisateur est ramené à la page d'accueil.
-
-
-
